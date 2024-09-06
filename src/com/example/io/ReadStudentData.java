@@ -19,10 +19,10 @@ public class ReadStudentData {
         int count = 0;
         while (line != null) {
             line = bufferedReader.readLine();
-            count++;
+            count++;//1,2,3,4,5
         }
 
-        studentData = new Student[count];
+        studentData = new Student[count - 1];
         // read data from file, add objects of student to array
         bufferedReader = new BufferedReader(new FileReader(file));
         line = bufferedReader.readLine();// reading the header
